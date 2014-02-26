@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
         // on lui change sont text
         coucou.setText("Changer avant");
         //on change sa position
-        coucou.setPadding(50,50,0,0);
+        coucou.setPadding(10,10,10,10);
         
         setContentView(layout);
        

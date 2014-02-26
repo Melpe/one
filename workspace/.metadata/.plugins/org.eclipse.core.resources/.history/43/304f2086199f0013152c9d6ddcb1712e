@@ -23,13 +23,13 @@ public class MainActivity extends Activity {
         layout = (RelativeLayout)RelativeLayout.inflate(this, R.layout.activity_main, null);
         
         //on recupere la vue text
-        coucou= (TextView)layout.findViewById(R.id.text );
+        coucou= layout.findViewById(R.id.text );
         // on lui change sont text
         coucou.setText("Changer avant");
         //on change sa position
-        coucou.setPadding(50,50,0,0);
+        coucou.setPadding(0,0,0,0);
         
-        setContentView(layout);
+        setContentView(R.layout.activity_main);
        
         
        

@@ -10,13 +10,12 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignRight="@+id/text"
-        android:layout_marginBottom="89dp"
-        android:layout_marginLeft="47dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
         android:text="Button" />
 
     <TextView

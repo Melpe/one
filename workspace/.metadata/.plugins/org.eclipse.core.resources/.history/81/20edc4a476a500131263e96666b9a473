@@ -1,0 +1,21 @@
+package com.example.one;
+
+import android.app.Activity;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Button;
+
+public class EventBoutonTouch extends Activity implements View.OnTouchListener {
+
+	@Override
+	public boolean onTouch (View IN_vw_vue, MotionEvent IN_me_event){
+		
+		Button Var_bt_Bouton = (Button)IN_vw_vue; 
+		Var_bt_Bouton.setWidth((int)IN_me_event.getX());
+		Var_bt_Bouton.setHeight((int)IN_me_event.getY());
+    	
+		Var_bt_Bouton.setText("Votre position sur le bouton : X = " + IN_me_event.getX() + "et Y= "+IN_me_event.getY());
+		
+		return true;
+	}
+}

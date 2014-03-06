@@ -1,0 +1,14 @@
+package com.example.one;
+
+import android.app.Activity;
+import android.view.MotionEvent;
+import android.view.View;
+
+public class EventBoutonTouch extends Activity implements View.OnTouchListener {
+
+	@Override
+	public boolean onTouch (View vue, MotionEvent event){
+		
+		return true;
+	}
+}

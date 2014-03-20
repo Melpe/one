@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+    
+        <TextView 
+        android:id="@+id/Red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/Red"/>
+
+        <TextView 
+        android:id="@+id/Green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/Green"/>
+        
+        <TextView 
+        android:id="@+id/Blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="212dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/Blue"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="60dp" 
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="54dp"/>
+
+        <RadioButton
+            android:id="@+id/radioBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="54dp"
+            android:text="@string/figer"/>
+    </RadioGroup>
+    
+    <Button
+        android:id="@+id/PlusRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="100dp"
+        android:maxLength="3"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:text="@string/plus"
+        android:textSize="20sp" >
+
+    </Button>
+    <Button
+        android:id="@+id/PlusGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="100dp"
+        android:maxLength="3"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:text="@string/plus"
+        android:textSize="20sp" >
+
+    </Button>   
+     <Button
+        android:id="@+id/PlusBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="100dp"
+        android:maxLength="3"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:text="@string/plus"
+        android:textSize="20sp" >
+
+    </Button>
+    
+    <TextView 
+        android:id="@+id/PourRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="170dp"
+        android:text="@string/defaut"/>
+
+        <TextView 
+        android:id="@+id/PourGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="170dp"
+        android:text="@string/defaut"/>
+        
+        <TextView 
+        android:id="@+id/PourBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="170dp"
+        android:text="@string/defaut"/>
+        
+        <Button
+        android:id="@+id/MoinsRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="200dp"
+        android:maxLength="3"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:text="@string/moins"
+        android:textSize="20sp" >
+
+    </Button>
+    <Button
+        android:id="@+id/MoinsGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="200dp"
+        android:maxLength="3"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:text="@string/moins"
+        android:textSize="20sp" >
+
+    </Button>   
+     <Button
+        android:id="@+id/MoinsBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="200dp"
+        android:maxLength="3"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:text="@string/moins"
+        android:textSize="20sp" >
+
+    </Button>
+    
+     <SurfaceView
+         android:id="@+id/Fond"
+         android:layout_width="300dp"
+         android:layout_height="300dp"
+         android:layout_alignLeft="@+id/MoinsRed"
+         android:layout_alignRight="@+id/MoinsBlue"
+         android:layout_marginTop="300dp">
+
+</SurfaceView>
+         
+</RelativeLayout>

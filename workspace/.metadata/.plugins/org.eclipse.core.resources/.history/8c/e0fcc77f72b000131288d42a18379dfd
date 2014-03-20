@@ -1,0 +1,72 @@
+package com.example.triangledemaxwell;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.view.MotionEvent;
+import android.view.View.OnTouchListener;
+import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.view.View;
+
+public class MainActivity extends Activity implements OnTouchListener{
+	RadioGroup Var_rg_Group;
+	RadioButton Var_rb_Red;
+	RadioButton Var_rb_Blue;
+	RadioButton Var_rb_Green;
+	float Var_ft_PourRed;
+	float Var_ft_PourGreen;
+	float Var_ft_PourBlue;
+
+	
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+    	Button Var_bt_Rplus;
+    	Button Var_bt_Bplus;
+    	Button Var_bt_Gplus;
+    	Button Var_bt_Rmoins;
+    	Button Var_bt_Bmoins;
+    	Button Var_bt_Gmoins;
+    	
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        Var_rg_Group = (RadioGroup)findViewById(R.id.radioGroup1);
+        Var_rb_Red = (RadioButton)findViewById(R.id.radioRed);
+        Var_rb_Green = (RadioButton)findViewById(R.id.radioGreen);
+        Var_rb_Blue = (RadioButton)findViewById(R.id.radioBlue);
+        
+        Var_bt_Rplus = (Button)findViewById(R.id.PlusRed);
+        Var_bt_Bplus = (Button)findViewById(R.id.PlusBlue);
+        Var_bt_Gplus = (Button)findViewById(R.id.PlusGreen);
+        Var_bt_Rmoins = (Button)findViewById(R.id.MoinsRed);
+        Var_bt_Bmoins = (Button)findViewById(R.id.MoinsBlue);
+        Var_bt_Gmoins = (Button)findViewById(R.id.MoinsGreen);
+        
+        Var_bt_Rplus.setOnTouchListener(this);
+        Var_bt_Bplus.setOnTouchListener(this);
+        Var_bt_Gplus.setOnTouchListener(this);
+        Var_bt_Rmoins.setOnTouchListener(this);
+        Var_bt_Bmoins.setOnTouchListener(this);
+        Var_bt_Gmoins.setOnTouchListener(this);
+        
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+
+	@Override
+	public boolean onTouch(View arg0, MotionEvent arg1) {
+		// TODO Auto-generated method stub
+		return true;
+	}
+    
+}

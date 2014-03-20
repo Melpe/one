@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Triangle de Maxwell</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="plus">+</string>
+    <string name="moins">-</string>
+    <string name="figer">     Figer</string>
+	<string name="defaut">33%</string>
+	<string name="Blue">B</string>
+	<string name="Red">R</string>
+	<string name="Green">G</string>
+	
+</resources>
